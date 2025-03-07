@@ -1,15 +1,13 @@
-import React from 'react'
-import './App.css'
+import React from "react";
+import MainLayout from "./layouts/MainLayout";  // Import MainLayout
+import HomePage from "./pages/HomePage";  // Import HomePage
 
 const App = () => {
-
   return (
-    <>
-      <p className="text-center text-2xl">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <MainLayout>
+      <HomePage />  {/* The content of the home page */}
+    </MainLayout>
+  );
+};
 
-export default App
+export default App;
