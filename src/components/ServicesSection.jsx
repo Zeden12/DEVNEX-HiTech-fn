@@ -47,18 +47,22 @@ const ServicesSection = () => {
         ].map((service, idx) => (
           <div
             key={idx}
-            className="relative p-8 border-b-2 border-r-2 border-sky-500/20"
+            className="relative p-8 border-b-2 border-r-2 border-sky-500/20 transform transition-all duration-300 hover:scale-105 hover:bg-[#1a1f26] hover:shadow-lg hover:border-sky-500 cursor-pointer group"
           >
             {/* Icon */}
-            <div className="mb-4">
+            <div className="mb-4 transform transition-all duration-300 group-hover:scale-110">
               {service.icon}
             </div>
 
             {/* Title */}
-            <h3 className="text-2xl font-semibold mb-4">{service.title}</h3>
+            <h3 className="text-2xl font-semibold mb-4 transform transition-all duration-300 group-hover:text-sky-500">
+              {service.title}
+            </h3>
 
             {/* Description */}
-            <p className="text-[#E7EBEE]">{service.description}</p>
+            <p className="text-[#E7EBEE] transform transition-all duration-300 group-hover:text-white">
+              {service.description}
+            </p>
 
             {/* Cross Separator */}
             {idx % 2 === 0 && (
