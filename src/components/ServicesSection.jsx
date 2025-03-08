@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaCode, FaCloud, FaBug, FaHandshake } from 'react-icons/fa';
+import { FaCode, FaCloud, FaBug, FaChalkboardTeacher } from 'react-icons/fa';
 
 const ServicesSection = () => {
   return (
@@ -25,24 +25,28 @@ const ServicesSection = () => {
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 px-6 md:px-12 lg:px-20">
         {[
           {
-            icon: <FaCode size={32} className="text-sky-500" />,
+            icon: <FaCode size={40} className="text-sky-500" />,
             title: "Software Development",
-            description: "We build custom software solutions tailored to your business needs, ensuring scalability, reliability, and innovation.",
+            description:
+              "We specialize in building custom software solutions tailored to your business needs. From web applications to mobile apps, our team ensures scalability, reliability, and innovation to help your business grow and stay ahead in the digital landscape.",
           },
           {
-            icon: <FaCloud size={32} className="text-sky-500" />,
-            title: "SaaS",
-            description: "Delivering flexible and scalable cloud-based solutions to help your business grow and adapt to changing demands.",
+            icon: <FaCloud size={40} className="text-sky-500" />,
+            title: "SaaS Solutions",
+            description:
+              "We deliver flexible and scalable cloud-based solutions designed to meet the unique demands of your business. Our SaaS offerings enable seamless integration, cost efficiency, and adaptability to help you thrive in a competitive market.",
           },
           {
-            icon: <FaBug size={32} className="text-sky-500" />,
+            icon: <FaBug size={40} className="text-sky-500" />,
             title: "Testing",
-            description: "Comprehensive testing services to ensure your applications are bug-free, secure, and perform at their best.",
+            description:
+              "Our comprehensive testing services ensure your applications are bug-free, secure, and perform at their best. We use advanced testing methodologies to deliver high-quality software that meets your business requirements and exceeds user expectations.",
           },
           {
-            icon: <FaHandshake size={32} className="text-sky-500" />,
-            title: "IT Consultancy",
-            description: "Expert IT consulting to help you make informed decisions and optimize your technology infrastructure.",
+            icon: <FaChalkboardTeacher size={40} className="text-sky-500" />,
+            title: "DEVNEX Academy",
+            description:
+              "DEVNEX Academy is our initiative to empower the next generation of tech professionals. We offer training programs, workshops, and mentorship to help individuals and teams develop the skills needed to excel in the ever-evolving tech industry.",
           },
         ].map((service, idx) => (
           <div
@@ -50,17 +54,17 @@ const ServicesSection = () => {
             className="relative p-8 border-b-2 border-r-2 border-sky-500/20 transform transition-all duration-300 hover:scale-105 hover:bg-[#1a1f26] hover:shadow-lg hover:border-sky-500 cursor-pointer group"
           >
             {/* Icon */}
-            <div className="mb-4 transform transition-all duration-300 group-hover:scale-110">
+            <div className="mb-6 transform transition-all duration-300 group-hover:scale-110">
               {service.icon}
             </div>
 
             {/* Title */}
-            <h3 className="text-2xl font-semibold mb-4 transform transition-all duration-300 group-hover:text-sky-500">
+            <h3 className="text-3xl font-semibold mb-6 transform transition-all duration-300 group-hover:text-sky-500">
               {service.title}
             </h3>
 
             {/* Description */}
-            <p className="text-[#E7EBEE] transform transition-all duration-300 group-hover:text-white">
+            <p className="text-[#E7EBEE] text-lg leading-relaxed transform transition-all duration-300 group-hover:text-white">
               {service.description}
             </p>
 

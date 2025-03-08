@@ -7,10 +7,10 @@ const StatsSection = () => {
     <section className="py-20 bg-[#1a1f26] text-white text-center">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 px-6">
         {[
-          { stat: 150, title: "Projects Completed" },
-          { stat: 25, title: "Open Projects" },
-          { stat: 300, title: "Happy Customers" },
-          { stat: 10, title: "Years of Experience" }
+          { stat: 20, title: "Projects Completed" },
+          { stat: 8, title: "Open Projects" },
+          { stat: 10, title: "Clients" },
+          { stat: 5, title: "Experience" }
         ].map((item, idx) => (
           <div key={idx} className="p-8 border-b-2 border-r-2 border-sky-500/20 hover:border-sky-500/50 transition-all duration-300">
             <InView triggerOnce>

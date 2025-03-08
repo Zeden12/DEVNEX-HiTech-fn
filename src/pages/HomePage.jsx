@@ -5,7 +5,6 @@ import AboutSection from "../components/AboutSection";
 import ServicesSection from "../components/ServicesSection";
 import StatsSection from "../components/StatsSection";
 import PartnersSection from "../components/PartnersSection";
-import OpportunitiesSection from "../components/OpportunitiesSection";
 import OpportunitiesBanner from '../components/OpportunitiesBanner';
 
 const HomePage = () => {
@@ -17,7 +16,6 @@ const HomePage = () => {
       <OpportunitiesBanner />
       <StatsSection />
       <PartnersSection/>
-      <OpportunitiesSection/>
     </div>
   );
 };

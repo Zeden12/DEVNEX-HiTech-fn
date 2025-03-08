@@ -1,4 +1,3 @@
-// src/components/IconBoxSection.jsx
 import React from 'react';
 import { FaLaptop, FaCloud, FaHeadphones, FaRocket } from 'react-icons/fa';
 
@@ -18,10 +17,26 @@ const IconBoxSection = ({ heroBackgroundImage }) => {
         >
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
             {[
-              { icon: <FaLaptop size={28} />, title: "Software Development", description: "Custom software tailored to your needs." },
-              { icon: <FaCloud size={28} />, title: "SaaS", description: "Flexible and scalable cloud solutions." },
-              { icon: <FaHeadphones size={28} />, title: "24/7 Support", description: "Always here to help, any time, anywhere." },
-              { icon: <FaRocket size={28} />, title: "Your Wish", description: "Innovation to bring your ideas to life." }
+              { 
+                icon: <FaLaptop size={32} />, 
+                title: "Software Development", 
+                description: "Custom software tailored to your needs." 
+              },
+              { 
+                icon: <FaCloud size={32} />, 
+                title: "SaaS Solutions", 
+                description: "Flexible and scalable cloud solutions." 
+              },
+              { 
+                icon: <FaHeadphones size={32} />, 
+                title: "24/7 Support", 
+                description: "Always here to help, any time, anywhere." 
+              },
+              { 
+                icon: <FaRocket size={32} />, 
+                title: "Your Wish", 
+                description: "Your wish is our priority." 
+              }
             ].map((item, idx) => (
               <div
                 key={idx}
@@ -29,9 +44,9 @@ const IconBoxSection = ({ heroBackgroundImage }) => {
               >
                 <div className="flex items-center justify-center gap-3 mb-3">
                   <div className="text-sky-500">{item.icon}</div>
-                  <h3 className="text-white text-lg font-semibold">{item.title}</h3>
+                  <h3 className="text-white text-xl font-semibold">{item.title}</h3>
                 </div>
-                <p className="text-[#E7EBEE] text-sm">{item.description}</p>
+                <p className="text-[#E7EBEE] text-base">{item.description}</p>
               </div>
             ))}
           </div>
