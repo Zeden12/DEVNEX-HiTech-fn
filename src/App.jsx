@@ -1,12 +1,18 @@
 import React from "react";
-import MainLayout from "./layouts/MainLayout";  // Import MainLayout
-import HomePage from "./pages/HomePage";  // Import HomePage
+import MainLayout from "./layouts/MainLayout"; 
+import HomePage from "./pages/HomePage"; 
+import Loader from "./components/Loader"; 
+import CustomCursor from "./components/CustomCursor"; 
 
 const App = () => {
   return (
-    <MainLayout>
-      <HomePage />  {/* The content of the home page */}
-    </MainLayout>
+    <>
+      <Loader />
+      <CustomCursor />
+      <MainLayout>
+        <HomePage /> 
+      </MainLayout>
+    </>
   );
 };
 
