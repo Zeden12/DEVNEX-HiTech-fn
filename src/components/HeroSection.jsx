@@ -27,10 +27,10 @@ const HeroSection = () => {
 
         {/* Buttons */}
         <div className="flex flex-col md:flex-row gap-6 md:gap-8">
-          <button className="bg-sky-500 text-white px-8 py-3 rounded-full hover:bg-white hover:text-sky-500 transition-all duration-300 shadow-lg hover:shadow-xl text-lg md:text-xl font-semibold transform hover:scale-105">
+          <button className="border border-sky-500 text-white px-8 py-3 rounded-full hover:bg-sky-500 hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl text-lg md:text-xl font-semibold transform hover:scale-105">
             Learn More
           </button>
-          <button className="border border-white text-white px-8 py-3 rounded-full hover:bg-white hover:text-black transition-all duration-300 shadow-lg hover:shadow-xl text-lg md:text-xl font-semibold transform hover:scale-105">
+          <button className="border border-purple-500 text-white px-8 py-3 rounded-full hover:bg-purple-500 hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl text-lg md:text-xl font-semibold transform hover:scale-105">
             Contact Us
           </button>
         </div>
