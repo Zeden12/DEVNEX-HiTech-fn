@@ -21,8 +21,6 @@ const Navbar = () => {
     window.addEventListener("scroll", controlNavbar);
     return () => window.removeEventListener("scroll", controlNavbar);
   }, [lastScrollY]);
-
-  // Close dropdown when clicking outside
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
@@ -49,18 +47,13 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto flex justify-between items-center py-12 px-6 md:px-12 lg:px-20">
-        {/* Logo */}
         <h1 className="text-white text-2xl font-bold">DEVNEX Hi-Tech</h1>
-
-        {/* Hamburger Menu Icon (Mobile) */}
         <button
           className="text-white text-2xl md:hidden"
           onClick={toggleMobileMenu}
         >
           {isMobileMenuOpen ? <FaTimes /> : <FaBars />}
         </button>
-
-        {/* Navigation Links (Desktop) */}
         <div className="hidden md:flex gap-10 font-text-medium items-center">
           {[
             "HOME",
@@ -77,7 +70,6 @@ const Navbar = () => {
             </a>
           ))}
 
-          {/* Dropdown Menu (Desktop) */}
           <div className="relative" ref={dropdownRef}>
             <button
               className="text-[#E7EBEE] hover:text-sky-500 flex items-center gap-2 transition duration-300"
@@ -102,17 +94,12 @@ const Navbar = () => {
             )}
           </div>
         </div>
-
-        {/* Contact Button (Desktop) */}
         <button className="hidden md:block border border-sky-500 text-white px-8 py-3 rounded-full hover:bg-sky-500 hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl text-lg font-semibold transform hover:scale-105">
           CONTACT US
         </button>
       </div>
-
-      {/* Mobile Menu (Dropdown) */}
       {isMobileMenuOpen && (
         <div className="md:hidden bg-[#111518]/90 backdrop-blur-md w-full px-6 pb-6">
-          {/* Navigation Links (Mobile) */}
           {[
             "HOME",
             "ABOUT US",
@@ -128,8 +115,6 @@ const Navbar = () => {
               {nav}
             </a>
           ))}
-
-          {/* Dropdown Menu (Mobile) */}
           <div className="relative" ref={dropdownRef}>
             <button
               className="text-[#E7EBEE] hover:text-sky-500 flex items-center gap-2 transition duration-300 py-3"
@@ -156,8 +141,6 @@ const Navbar = () => {
               </div>
             )}
           </div>
-
-          {/* Contact Button (Mobile) */}
           <button className="w-full border border-sky-500 text-white px-8 py-3 rounded-full hover:bg-sky-500 hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl text-lg font-semibold transform hover:scale-105 mt-4">
             CONTACT US
           </button>
