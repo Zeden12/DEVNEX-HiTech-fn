@@ -6,7 +6,6 @@ import { AiOutlinePhone } from 'react-icons/ai';
 const Footer = () => {
   return (
     <footer className="bg-[#111518] text-white flex flex-col min-h-screen">
-      {/* Top Section */}
       <div className="flex-grow flex flex-col justify-center items-center py-16">
         <h2 className="text-5xl sm:text-6xl font-bold mb-4 text-center">
           LET'S TURN YOUR IDEA
@@ -23,10 +22,7 @@ const Footer = () => {
           </a>
         </div>
       </div>
-
-      {/* Footer Columns */}
       <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 px-6 py-12">
-        {/* Navigation Column */}
         <div className="text-center sm:text-left">
           <h4 className="text-2xl font-bold mb-4">NAVIGATION</h4>
           <ul>
@@ -43,7 +39,6 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Contact Column */}
         <div className="text-center sm:text-left">
           <h4 className="text-2xl font-bold mb-4">CONTACT</h4>
           <ul>
@@ -66,7 +61,6 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Address Column */}
         <div className="text-center sm:text-left">
           <h4 className="text-2xl font-bold mb-4">ADDRESS</h4>
           <ul>
@@ -81,7 +75,6 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Social Media Column */}
         <div className="text-center sm:text-left">
           <h1 className="text-2xl font-bold mb-2">DEVNEX Hi-Tech</h1>
           <p className="text-lg mb-4 text-[#E7EBEE]">Innovating the Future, One Solution at a Time</p>
@@ -102,7 +95,6 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Copyright Section */}
       <div className="bg-[#0d1217] py-10 mt-auto">
         <div className="container mx-auto text-center text-lg text-[#E7EBEE]">
           <p>&copy; 2025 DEVNEX Hi-Tech. All Rights Reserved.</p>

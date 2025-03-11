@@ -19,9 +19,8 @@ const AboutSection = () => {
   return (
     <section className="bg-[#1a1f26] text-white py-20">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 px-10 items-center">
-        {/* Left Part with Image and Header */}
         <div className="relative">
-          {/* Header */}
+
           <motion.div
             initial={{ opacity: 0, x: -100 }}
             animate={{ opacity: 1, x: 0 }}
@@ -35,8 +34,6 @@ const AboutSection = () => {
               <div className="w-3/4 mt-2 h-1.5 bg-gradient-to-r from-sky-500 to-purple-500 rounded-full"></div>
             </h1>
           </motion.div>
-
-          {/* Image with Moving Text */}
           <motion.div
             initial={{ opacity: 0, x: -100 }}
             animate={{ opacity: 1, x: 0 }}
@@ -56,8 +53,6 @@ const AboutSection = () => {
             </motion.div>
           </motion.div>
         </div>
-
-        {/* Right Part with Content */}
         <motion.div
           initial={{ opacity: 0, x: 100 }}
           animate={{ opacity: 1, x: 0 }}
@@ -80,8 +75,6 @@ const AboutSection = () => {
             and success. With a focus on quality and innovation, we strive to exceed our 
             clients' expectations and deliver exceptional results.
           </p>
-
-          {/* Dropdown Sections */}
           {[
             {
               title: 'Our Vision',
