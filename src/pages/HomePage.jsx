@@ -1,4 +1,3 @@
-// src/pages/HomePage.jsx
 import React from "react";
 import HeroSection from "../components/HeroSection";
 import AboutSection from "../components/AboutSection";
@@ -10,12 +9,16 @@ import OpportunitiesBanner from '../components/OpportunitiesBanner';
 const HomePage = () => {
   return (
     <div>
-      <HeroSection />
-      <AboutSection />
-      <ServicesSection />
+      <div id="hero">
+        <HeroSection />
+      </div>
+        <AboutSection />
+      <div id="services">
+        <ServicesSection />
+      </div>
       <OpportunitiesBanner />
       <StatsSection />
-      <PartnersSection/>
+      <PartnersSection />
     </div>
   );
 };
