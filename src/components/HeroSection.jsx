@@ -10,7 +10,6 @@ const HeroSection = () => {
       style={{ backgroundImage: `url(${heroImage})` }}
     >
       <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-start px-6 md:px-12 lg:px-20 pt-32 pb-32">
-        {/* Title */}
         <h1 className="text-white text-5xl md:text-6xl font-bold mb-6 uppercase transform transition-all duration-300 hover:scale-105">
           Welcome to{' '}
           <span className="bg-gradient-to-r from-sky-500 to-purple-500 bg-clip-text text-transparent">
@@ -32,8 +31,6 @@ const HeroSection = () => {
           </button>
         </div>
       </div>
-
-      {/* Icon Box Section */}
       <div className="absolute bottom-0 w-full">
         <IconBoxSection />
       </div>
