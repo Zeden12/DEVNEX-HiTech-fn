@@ -146,7 +146,6 @@ const AboutPage = () => {
             ))}
           </div>
 
-          {/* Meet Our Whole Team / Close Button */}
           <div className="text-center mt-8">
             <button
               onClick={() => setShowAll(!showAll)}
@@ -161,7 +160,6 @@ const AboutPage = () => {
         </div>
       </div>
 
-      {/* Testimonials Section */}
       <div className="bg-[#111518]/90 py-16">
         <h2 className="text-4xl font-bold bg-gradient-to-r from-sky-500 to-purple-500 bg-clip-text text-transparent mb-8 text-center">
           What Our Clients Say
