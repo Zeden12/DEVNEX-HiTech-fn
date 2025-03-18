@@ -1,40 +1,34 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { FaArrowRight, FaTimes, FaArrowLeft, FaArrowRight as FaArrowRightTestimonial, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { FaArrowRight, FaArrowLeft, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 // Import images from assets
-import about from "../assets/about.jpg";
-import alexander from "../assets/alexander.jpg";
-import arno from "../assets/arno.jpg";
-import baner from "../assets/baner.jpg";
-import doruk from "../assets/doruk.jpg";
-import hero1 from "../assets/hero1.jpg";
-import hero2 from "../assets/hero2.jpg";
-import krish from "../assets/krish.jpg";
-import moritz from "../assets/moritz.jpg";
-import priscilla from "../assets/priscilla.jpg";
-import sandip from "../assets/sandip.jpg";
-import vadim from "../assets/vadim.jpg";
+import Ernest from "../assets/ernest.jpg"; // Ensure this matches the actual filename
+import Zidan from "../assets/zidan.jpg";
+import Amin from "../assets/amin.jpg";
+import Herve from "../assets/herve.jpg";
+import Ella from "../assets/ella.jpg";
+import Zeden from "../assets/Zed6.jpg";
 
 const AboutPage = () => {
   const [showAll, setShowAll] = useState(false);
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
 
   const teamMembers = [
-    { name: "Mr Rouben", position: "CEO & Co-founder", image: alexander, linkedin: "https://www.linkedin.com/", instagram: "https://www.instagram.com/" },
-    { name: "Ernest HAGUMA KWIZERA", position: "Co-founder & Software Developer", image: arno, linkedin: "https://www.linkedin.com/", instagram: "https://www.instagram.com/" },
-    { name: "GATANAZI Amin", position: "Backend Developer", image: baner, linkedin: "https://www.linkedin.com/", instagram: "https://www.instagram.com/" },
-    { name: "ISHIMWE Ella Herve", position: "Frontend Developer", image: baner, linkedin: "https://www.linkedin.com/", instagram: "https://www.instagram.com/" },
-    { name: "John Doe", position: "DevOps Engineer", image: doruk, linkedin: "https://www.linkedin.com/", instagram: "https://www.instagram.com/" },
-    { name: "Emily Davis", position: "Data Scientist", image: hero1, linkedin: "https://www.linkedin.com/", instagram: "https://www.instagram.com/" },
-    { name: "Michael Wilson", position: "Mobile Developer", image: hero2, linkedin: "https://www.linkedin.com/", instagram: "https://www.instagram.com/" },
-    { name: "Sarah Lee", position: "QA Engineer", image: krish, linkedin: "https://www.linkedin.com/", instagram: "https://www.instagram.com/" },
+    { name: "Mr Rouben", position: "CEO & Co-founder", image: Ernest, linkedin: "https://www.linkedin.com/", instagram: "https://www.instagram.com/" },
+    { name: "Ernest HAGUMA KWIZERA", position: "Co-founder & Software Developer", image: Zidan, linkedin: "https://www.linkedin.com/", instagram: "https://www.instagram.com/" },
+    { name: "GATANAZI Amin", position: "Backend Developer", image: Amin, linkedin: "https://www.linkedin.com/", instagram: "https://www.instagram.com/" },
+    { name: "IRADUKUNDA Ella Herve", position: "Frontend Developer", image: Herve, linkedin: "https://www.linkedin.com/", instagram: "https://www.instagram.com/" },
+    { name: "John Doe", position: "DevOps Engineer", image: Zidan, linkedin: "https://www.linkedin.com/", instagram: "https://www.instagram.com/" },
+    { name: "Emily Davis", position: "Data Scientist", image: Ella, linkedin: "https://www.linkedin.com/", instagram: "https://www.instagram.com/" },
+    { name: "Michael Wilson", position: "Mobile Developer", image: Zeden, linkedin: "https://www.linkedin.com/", instagram: "https://www.instagram.com/" },
+    { name: "Sarah Lee", position: "QA Engineer", image: Amin, linkedin: "https://www.linkedin.com/", instagram: "https://www.instagram.com/" },
   ];
 
   const testimonials = [
-    { name: "John Doe", title: "CEO, Tech Innovators", image: moritz, feedback: "DEVNEX Hi-Tech transformed our business with cutting-edge tech solutions." },
-    { name: "Sarah K.", title: "Product Manager, NextGen Corp", image: priscilla, feedback: "Their team is outstanding! Quick delivery, premium quality. Highly recommended!" },
-    { name: "James O.", title: "CTO, Green Energy Solutions", image: sandip, feedback: "Reliable, skilled, and creative. DEVNEX Hi-Tech exceeded expectations!" },
+    { name: "John Doe", title: "CEO, Tech Innovators", image: Zidan, feedback: "DEVNEX Hi-Tech transformed our business with cutting-edge tech solutions." },
+    { name: "Sarah K.", title: "Product Manager, NextGen Corp", image: Amin, feedback: "Their team is outstanding! Quick delivery, premium quality. Highly recommended!" },
+    { name: "James O.", title: "CTO, Green Energy Solutions", image: Herve, feedback: "Reliable, skilled, and creative. DEVNEX Hi-Tech exceeded expectations!" },
   ];
 
   const nextTestimonial = () => setCurrentTestimonial((currentTestimonial + 1) % testimonials.length);
@@ -53,8 +47,9 @@ const AboutPage = () => {
             <span>/</span>
             <span>About Us</span>
           </div>
-          <h1 className="text-6xl font-bold bg-gradient-to-r from-sky-500 to-purple-500 bg-clip-text text-transparent text-center mt-8">
-            Welcome to DEVNEX Hi-Tech
+          <div className="w-20 h-px bg-sky-500 my-4"></div>
+          <h1 className="text-4xl font-bold bg-gradient-to-r from-sky-500 to-purple-500 bg-clip-text text-transparent text-center mt-8">
+            Meet Our Team
           </h1>
         </div>
       </div>
@@ -97,12 +92,7 @@ const AboutPage = () => {
 
         {/* Right Side - Team Profiles */}
         <div>
-          {/* Animated Text */}
-          <div className="text-right mb-8">
-            <h2 className="text-xl font-bold bg-gradient-to-r from-sky-500 to-purple-500 bg-clip-text text-transparent">
-              Our Team Built It With Full Love
-            </h2>
-          </div>
+          {/* Removed Animated Text */}
 
           <div className="grid grid-cols-2 gap-8">
             {visibleMembers.map((member, index) => (
@@ -116,14 +106,14 @@ const AboutPage = () => {
                 <img
                   src={member.image}
                   alt={member.name}
-                  className="w-full h-64 object-cover transition-all duration-300 group-hover:scale-110 group-hover:opacity-50"
+                  className="w-full h-80 object-cover object-top transition-all duration-300 group-hover:scale-110 group-hover:opacity-50"
                 />
 
-                {/* Text and Icons (Partially visible by default, fully visible on hover) */}
-                <div className="absolute inset-0 flex flex-col items-center justify-center p-4 bg-black/30 opacity-80 group-hover:opacity-100 transition-opacity duration-300">
+                {/* Text and Icons (Moved to the bottom) */}
+                <div className="absolute inset-x-0 bottom-0 p-4 bg-black/50 backdrop-blur-sm">
                   <h3 className="text-xl font-bold text-[#E7EBEE] text-center">{member.name}</h3>
-                  <p className="text-lg text-[#E7EBEE] text-center mb-4">{member.position}</p>
-                  <div className="flex justify-center space-x-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <p className="text-lg text-[#E7EBEE] text-center mb-2">{member.position}</p>
+                  <div className="flex justify-center space-x-4">
                     <a
                       href={member.linkedin}
                       target="_blank"
@@ -179,7 +169,7 @@ const AboutPage = () => {
             <p className="text-lg text-[#E7EBEE] mt-4">{testimonials[currentTestimonial].feedback}</p>
           </div>
 
-          <FaArrowRightTestimonial className="text-sky-500 cursor-pointer text-3xl hover:scale-110" onClick={nextTestimonial} />
+          <FaArrowRight className="text-sky-500 cursor-pointer text-3xl hover:scale-110" onClick={nextTestimonial} />
         </div>
       </div>
     </div>

@@ -27,8 +27,8 @@ const AboutSection = () => {
             transition={{ duration: 1 }}
             className="mb-10 text-left"
           >
-            <h1 className="text-5xl font-bold">
-              <span className="bg-gradient-to-r from-sky-500 to-purple-500 bg-clip-text text-transparent">
+            <h1 className="text-4xl font-bold">
+              <span className="bg-gradient-to-r from-sky-400 to-purple-400 bg-clip-text text-transparent">
                 WHY CHOOSE US
               </span>
               <div className="w-3/4 mt-2 h-1.5 bg-gradient-to-r from-sky-500 to-purple-500 rounded-full"></div>
@@ -58,9 +58,9 @@ const AboutSection = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
         >
-          <h2 className="text-4xl font-bold mb-6">
+          <h2 className="text-3xl font-bold mb-6">
             Hello, We Are{' '}
-            <span className="bg-gradient-to-r from-sky-500 to-purple-500 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-sky-400 to-purple-400 bg-clip-text text-transparent">
               Devnex Hitech
             </span>
           </h2>

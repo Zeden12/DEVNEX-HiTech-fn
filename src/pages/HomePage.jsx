@@ -5,6 +5,7 @@ import ServicesSection from "../components/ServicesSection";
 import StatsSection from "../components/StatsSection";
 import PartnersSection from "../components/PartnersSection";
 import OpportunitiesBanner from '../components/OpportunitiesBanner';
+import DevnexOpportunities from "../components/DevnexOpportunities";
 
 const HomePage = () => {
   return (
@@ -16,8 +17,9 @@ const HomePage = () => {
       <div id="services">
         <ServicesSection />
       </div>
-      <OpportunitiesBanner />
+      <DevnexOpportunities />
       <StatsSection />
+      <OpportunitiesBanner />
       <PartnersSection />
     </div>
   );

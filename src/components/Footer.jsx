@@ -23,21 +23,26 @@ const Footer = () => {
         </div>
       </div>
       <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 px-6 py-12">
-        <div className="text-center sm:text-left">
-          <h4 className="text-2xl font-bold mb-4">NAVIGATION</h4>
-          <ul>
-            {["ABOUT US", "SERVICES", "PROJECTS", "OPPORTUNITIES"].map((item) => (
-              <li key={item} className="mb-2">
-                <a
-                  href={`#${item.toLowerCase()}`}
-                  className="text-[#E7EBEE] hover:text-sky-500 transition-all duration-300 text-lg"
-                >
-                  {item}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
+      <div className="text-center sm:text-left">
+  <h4 className="text-2xl font-bold mb-4">NAVIGATION</h4>
+  <ul>
+    {[
+      { label: "ABOUT US", link: "/about" },
+      { label: "SERVICES", link: "/services" },
+      { label: "CAREERS", link: "/career" },
+      { label: "DEVNEX ACADEMY", link: "/devnex-academy" },
+    ].map((item) => (
+      <li key={item.label} className="mb-2">
+        <a
+          href={item.link} // Link to the respective page
+          className="text-[#E7EBEE] hover:text-sky-500 transition-all duration-300 text-lg"
+        >
+          {item.label}
+        </a>
+      </li>
+    ))}
+  </ul>
+</div>
 
         <div className="text-center sm:text-left">
           <h4 className="text-2xl font-bold mb-4">CONTACT</h4>

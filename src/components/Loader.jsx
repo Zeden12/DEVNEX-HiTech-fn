@@ -1,22 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 
-const Loader = () => {
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 3000);
-
-    return () => clearTimeout(timer);
-  }, []);
-
-  if (!loading) return null;
+const Loader = ({ isLoading }) => {
+  if (!isLoading) return null;
 
   return (
     <div
       className="fixed inset-0 flex items-center justify-center bg-[#1a1f26] z-50"
-      style={{ backgroundImage: `url(..assets/about.jpg)`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+      style={{ backgroundImage: `url(/assets/about.jpg)`, backgroundSize: 'cover', backgroundPosition: 'center' }}
     >
       <div className="absolute inset-0 bg-black/60"></div>
 

@@ -1,5 +1,6 @@
 import React from 'react';
-import { FaCode, FaCloud, FaBug, FaChalkboardTeacher } from 'react-icons/fa';
+import { FaCode, FaCloud, FaHandsHelping, FaChalkboardTeacher } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const ServicesSection = () => {
   return (
@@ -13,8 +14,8 @@ const ServicesSection = () => {
 
       {/* Header */}
       <div className="container mx-auto text-right mb-12 px-6 md:px-12 lg:px-20">
-        <h2 className="text-5xl font-bold uppercase">
-          <span className="bg-gradient-to-r from-sky-500 to-purple-500 bg-clip-text text-transparent">
+        <h2 className="text-4xl font-bold uppercase">
+          <span className="bg-gradient-to-r from-sky-400 to-purple-400 bg-clip-text text-transparent">
             Our Services
           </span>
         </h2>
@@ -25,28 +26,48 @@ const ServicesSection = () => {
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 px-6 md:px-12 lg:px-20">
         {[
           {
-            icon: <FaCode size={40} className="text-sky-500" />,
+            icon: <FaCode size={40} className="text-sky-400" />,
             title: "Software Development",
             description:
               "We specialize in building custom software solutions tailored to your business needs. From web applications to mobile apps, our team ensures scalability, reliability, and innovation to help your business grow and stay ahead in the digital landscape.",
+            details: [
+              "Web Development",
+              "Mobile App Development",
+              "Custom Software Solutions",
+            ],
           },
           {
-            icon: <FaCloud size={40} className="text-sky-500" />,
+            icon: <FaCloud size={40} className="text-sky-400" />,
             title: "SaaS Solutions",
             description:
               "We deliver flexible and scalable cloud-based solutions designed to meet the unique demands of your business. Our SaaS offerings enable seamless integration, cost efficiency, and adaptability to help you thrive in a competitive market.",
+            details: [
+              "Cloud-Based Applications",
+              "Subscription Management",
+              "Scalable Solutions",
+            ],
           },
           {
-            icon: <FaBug size={40} className="text-sky-500" />,
-            title: "Testing",
+            icon: <FaHandsHelping size={40} className="text-sky-400" />,
+            title: "IT Support",
             description:
-              "Our comprehensive testing services ensure your applications are bug-free, secure, and perform at their best. We use advanced testing methodologies to deliver high-quality software that meets your business requirements and exceeds user expectations.",
+              "Reliable IT support services to ensure your systems run smoothly and efficiently. We provide 24/7 technical support, network maintenance, and troubleshooting to keep your business operations uninterrupted.",
+            details: [
+              "24/7 Technical Support",
+              "Network Maintenance",
+              "Troubleshooting",
+            ],
           },
           {
-            icon: <FaChalkboardTeacher size={40} className="text-sky-500" />,
+            icon: <FaChalkboardTeacher size={40} className="text-sky-400" />,
             title: "DEVNEX Academy",
             description:
-              "DEVNEX Academy is our initiative to empower the next generation of tech professionals. We offer training programs, workshops, and mentorship to help individuals and teams develop the skills needed to excel in the ever-evolving tech industry.",
+              "Empowering the next generation of developers with cutting-edge training and mentorship. Our programs include coding bootcamps, mentorship programs, and hands-on projects to help aspiring developers build successful careers in tech.",
+            details: [
+              "Software Development Bootcamps",
+              "Internship Programs",
+              "Hands-On Projects",
+            ],
           },
         ].map((service, idx) => (
           <div
@@ -64,9 +85,19 @@ const ServicesSection = () => {
             </h3>
 
             {/* Description */}
-            <p className="text-[#E7EBEE] text-lg leading-relaxed transform transition-all duration-300 group-hover:text-white">
+            <p className="text-[#E7EBEE] text-lg leading-relaxed transform transition-all duration-300 group-hover:text-white mb-4">
               {service.description}
             </p>
+
+            {/* Details */}
+            <div className="space-y-2">
+              {service.details.map((detail, index) => (
+                <div key={index} className="flex items-center space-x-2">
+                  <div className="w-2 h-2 bg-sky-500 rounded-full"></div>
+                  <p className="text-[#E7EBEE]">{detail}</p>
+                </div>
+              ))}
+            </div>
 
             {/* Cross Separator */}
             {idx % 2 === 0 && (
@@ -77,6 +108,16 @@ const ServicesSection = () => {
             )}
           </div>
         ))}
+      </div>
+
+      {/* View All Services Link */}
+      <div className="container mx-auto text-center mt-16">
+        <Link
+          to="/services"
+          className="inline-flex items-center bg-gradient-to-r from-sky-500 to-purple-500 text-white px-8 py-3 rounded-lg font-semibold hover:from-sky-600 hover:to-purple-600 transition-all duration-300 transform hover:scale-105"
+        >
+          View All Services
+        </Link>
       </div>
     </section>
   );

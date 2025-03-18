@@ -1,13 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // Import Link for routing
 
 const OpportunitiesBanner = () => {
   // Dynamic path for the image
   const bannerImage = new URL('../assets/baner.jpg', import.meta.url).href;
 
   return (
-    <div
-      className="relative w-full h-[300px] md:h-[400px] flex items-center overflow-hidden"
-    >
+    <div className="relative w-full h-[300px] md:h-[400px] flex items-center overflow-hidden">
       {/* Blurred Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat backdrop-blur-sm"
@@ -26,12 +25,21 @@ const OpportunitiesBanner = () => {
 
         {/* Buttons */}
         <div className="flex gap-4 mt-6">
-          <button className="font-poppins text-white border border-sky-500 px-6 py-2 rounded-full hover:bg-sky-500 hover:text-white transition-all duration-300">
+          {/* Gain Opportunities Button */}
+          <Link
+            to="/services"
+            className="font-poppins text-white border border-sky-500 px-6 py-2 rounded-full hover:bg-sky-500 hover:text-white transition-all duration-300 transform hover:scale-105"
+          >
             Gain Opportunities
-          </button>
-          <button className="font-poppins text-white border border-purple-500 px-6 py-2 rounded-full hover:bg-purple-500 hover:text-white transition-all duration-300">
-            Work With Us
-          </button>
+          </Link>
+
+          {/* Work With Us Button */}
+          <Link
+            to="/contact"
+            className="font-poppins text-white border border-purple-500 px-6 py-2 rounded-full hover:bg-purple-500 hover:text-white transition-all duration-300 transform hover:scale-105"
+          >
+            Contact Us
+          </Link>
         </div>
       </div>
     </div>
