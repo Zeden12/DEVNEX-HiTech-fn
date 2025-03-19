@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { ChevronDown, ChevronUp } from 'lucide-react';
-import { FaBullseye, FaEye, FaFlag } from 'react-icons/fa'; // Icons for Vision, Mission, and Goals
+import { FaBullseye, FaEye, FaFlag } from 'react-icons/fa'; 
 import aboutImage from '../assets/about.jpg';
 import { motion } from 'framer-motion';
 

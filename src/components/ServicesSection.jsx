@@ -21,8 +21,6 @@ const ServicesSection = () => {
         </h2>
         <div className="ml-auto w-2/5 mt-2 h-1.5 bg-gradient-to-r from-sky-500 to-purple-500 rounded-full"></div>
       </div>
-
-      {/* Services Grid */}
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 px-6 md:px-12 lg:px-20">
         {[
           {
@@ -74,22 +72,18 @@ const ServicesSection = () => {
             key={idx}
             className="relative p-8 border-b-2 border-r-2 border-sky-500/20 transform transition-all duration-300 hover:scale-105 hover:bg-[#1a1f26] hover:shadow-lg hover:border-sky-500 cursor-pointer group"
           >
-            {/* Icon */}
             <div className="mb-6 transform transition-all duration-300 group-hover:scale-110">
               {service.icon}
             </div>
 
-            {/* Title */}
             <h3 className="text-3xl font-semibold mb-6 transform transition-all duration-300 group-hover:text-sky-500">
               {service.title}
             </h3>
 
-            {/* Description */}
             <p className="text-[#E7EBEE] text-lg leading-relaxed transform transition-all duration-300 group-hover:text-white mb-4">
               {service.description}
             </p>
 
-            {/* Details */}
             <div className="space-y-2">
               {service.details.map((detail, index) => (
                 <div key={index} className="flex items-center space-x-2">
@@ -99,7 +93,6 @@ const ServicesSection = () => {
               ))}
             </div>
 
-            {/* Cross Separator */}
             {idx % 2 === 0 && (
               <div className="absolute top-0 right-0 w-2 h-full bg-gradient-to-b from-transparent via-sky-500/20 to-transparent"></div>
             )}
@@ -110,7 +103,6 @@ const ServicesSection = () => {
         ))}
       </div>
 
-      {/* View All Services Link */}
       <div className="container mx-auto text-center mt-16">
         <Link
           to="/services"

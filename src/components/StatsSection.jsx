@@ -16,7 +16,6 @@ const StatsSection = () => {
             <InView triggerOnce>
               {({ inView, ref }) => (
                 <div ref={ref} className="space-y-4">
-                  {/* Stat Number */}
                   <h3 className="text-6xl md:text-7xl font-bold mb-4 text-sky-500">
                     <CountUp
                       start={0}
@@ -24,9 +23,8 @@ const StatsSection = () => {
                       duration={2.5}
                       separator=","
                     />
-                    + {/* Add "+" to all stats */}
+                    + 
                   </h3>
-                  {/* Stat Title */}
                   <p className="text-xl md:text-2xl text-[#E7EBEE] font-medium">{item.title}</p>
                 </div>
               )}

@@ -1,7 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 
 const PartnersSection = () => {
-  // Dynamically load images using new URL
   const partners = [
     { logo: new URL('../assets/devnex.jpg', import.meta.url).href, name: "Alexander Co." },
     { logo: new URL('../assets/SIE.jpg', import.meta.url).href, name: "Doruk Solutions" },
@@ -32,27 +31,20 @@ const PartnersSection = () => {
 
   return (
     <section className="py-16 bg-[#111518] text-white">
-      {/* Sweet Paragraph */}
       <div className="container mx-auto text-center mb-16 px-6 md:px-12 lg:px-20">
         <p className="text-2xl md:text-3xl font-semibold text-[#E7EBEE] leading-relaxed">
           At DEVNEX HiTech, we collaborate with industry leaders to deliver exceptional solutions that empower your business to thrive in the digital age.
         </p>
       </div>
-
-      {/* Header on the Left */}
       <div className="container mx-auto text-left mb-12 px-6 md:px-12 lg:px-20">
         <h2 className="text-4xl font-bold uppercase">
           <span className="bg-gradient-to-r from-sky-400 to-purple-400 bg-clip-text text-transparent">
             Our Clients
           </span>
         </h2>
-        {/* Gradient Line */}
         <div className="w-2/5 mt-2 h-1.5 bg-gradient-to-r from-sky-500 to-purple-500 rounded-full"></div>
       </div>
-
-      {/* Partner Logos Carousel */}
       <div className="container mx-auto px-6 md:px-12 lg:px-20 relative">
-        {/* Logos Container */}
         <div
           ref={containerRef}
           className="flex space-x-8 overflow-x-hidden scrollbar-hide py-4 whitespace-nowrap"

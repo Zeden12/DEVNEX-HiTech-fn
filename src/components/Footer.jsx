@@ -34,7 +34,7 @@ const Footer = () => {
     ].map((item) => (
       <li key={item.label} className="mb-2">
         <a
-          href={item.link} // Link to the respective page
+          href={item.link} 
           className="text-[#E7EBEE] hover:text-sky-500 transition-all duration-300 text-lg"
         >
           {item.label}
