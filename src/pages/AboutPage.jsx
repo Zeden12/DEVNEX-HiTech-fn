@@ -15,14 +15,12 @@ const AboutPage = () => {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
 
   const teamMembers = [
-    { name: "Mr Rouben", position: "CEO & Co-founder", image: Ernest, linkedin: "https://www.linkedin.com/", instagram: "https://www.instagram.com/" },
-    { name: "Ernest HAGUMA KWIZERA", position: "Co-founder & Software Developer", image: Zidan, linkedin: "https://www.linkedin.com/", instagram: "https://www.instagram.com/" },
+    { name: "Mr Reuben", position: "Founder", image: Ernest, linkedin: "https://www.linkedin.com/", instagram: "https://www.instagram.com/" },
+    { name: "Ernest HAGUMA KWIZERA", position: "CEO & Co-founder", image: Zidan, linkedin: "https://www.linkedin.com/", instagram: "https://www.instagram.com/" },
     { name: "GATANAZI Amin", position: "Backend Developer", image: Amin, linkedin: "https://www.linkedin.com/", instagram: "https://www.instagram.com/" },
     { name: "IRADUKUNDA Ella Herve", position: "Frontend Developer", image: Herve, linkedin: "https://www.linkedin.com/", instagram: "https://www.instagram.com/" },
-    { name: "John Doe", position: "DevOps Engineer", image: Zidan, linkedin: "https://www.linkedin.com/", instagram: "https://www.instagram.com/" },
-    { name: "Emily Davis", position: "Data Scientist", image: Ella, linkedin: "https://www.linkedin.com/", instagram: "https://www.instagram.com/" },
-    { name: "Michael Wilson", position: "Mobile Developer", image: Zeden, linkedin: "https://www.linkedin.com/", instagram: "https://www.instagram.com/" },
-    { name: "Sarah Lee", position: "QA Engineer", image: Amin, linkedin: "https://www.linkedin.com/", instagram: "https://www.instagram.com/" },
+    { name: "IKIREZI Dina", position: "Full Stack Developer", image: Ella, linkedin: "https://www.linkedin.com/", instagram: "https://www.instagram.com/" },
+    { name: "RUKUNDO BAZIGA Irene Serge", position: "DevOps Engineer", image: Zidan, linkedin: "https://www.linkedin.com/", instagram: "https://www.instagram.com/" },
   ];
 
   const testimonials = [

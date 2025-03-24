@@ -27,7 +27,7 @@ const DevnexAcademyPage = () => {
             Devnex Academy is Here!
           </h1>
           <p className="text-xl text-[#E7EBEE] mt-4 text-center">
-            We're Empowering the Next Generation of Developers Through the <strong>SIE Program</strong>
+            We're Empowering the Next Generation of Developers Through the <strong>SIE Programme</strong>
           </p>
           <div className="mt-8 flex flex-col items-center space-y-2">
             <p className="text-lg text-[#E7EBEE]">Apply Now</p>
@@ -56,11 +56,11 @@ const DevnexAcademyPage = () => {
 
       <div className="container mx-auto px-6 lg:px-20 py-16">
         <h2 className="text-4xl font-bold bg-gradient-to-r from-sky-500 to-purple-500 bg-clip-text text-transparent mb-8">
-          About the SIE Program
+          About the SIE Programme
         </h2>
         <div className="space-y-8">
           <p className="text-lg text-[#E7EBEE]">
-            The <strong>SIE Program</strong> is a transformative initiative designed to equip young developers with the skills needed to thrive in the tech industry. Through hands-on training, mentorship, and real-world projects, participants gain the expertise to build impactful software solutions.
+            The <strong>SIE Programme</strong> is a transformative initiative designed to equip young developers with the skills needed to thrive in the tech industry. Through hands-on training, mentorship, and real-world projects, participants gain the expertise to build impactful software solutions.
           </p>
           <p className="text-lg text-[#E7EBEE]">
             <strong>DEVNEX Hi-Tech</strong> proudly sponsors the <strong>SIE Software Development Program</strong>, one of the flagship programs under the SIE umbrella. This program focuses on cutting-edge technologies and industry-relevant skills, preparing participants for successful careers in software development.
@@ -74,7 +74,7 @@ const DevnexAcademyPage = () => {
             rel="noopener noreferrer"
             className="mt-4 text-sky-500 hover:text-sky-600 transition duration-300"
           >
-            Learn more about the SIE Program <FaArrowRight className="inline-block ml-2" />
+            Learn more about the SIE Programme <FaArrowRight className="inline-block ml-2" />
           </Link>
         </div>
       </div>

@@ -49,11 +49,7 @@ const Footer = () => {
           <ul>
             <li className="flex items-center justify-center sm:justify-start mb-2">
               <AiOutlinePhone className="mr-2 text-sky-500" />
-              <span className="text-lg">+250 781 963 232</span>
-            </li>
-            <li className="flex items-center justify-center sm:justify-start mb-2">
-              <AiOutlinePhone className="mr-2 text-sky-500" />
-              <span className="text-lg">+250 788 123 456</span>
+              <span className="text-lg">+250788338877</span>
             </li>
             <li className="flex items-center justify-center sm:justify-start mb-2">
               <IoMailOutline className="mr-2 text-sky-500" />
@@ -87,13 +83,13 @@ const Footer = () => {
             <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="text-sky-500 hover:text-white transition-all duration-300">
               <FaLinkedin size={34} />
             </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-sky-500 hover:text-white transition-all duration-300">
+            <a href="https://x.com/DevNex_Hi_Tech?s=09" target="_blank" rel="noopener noreferrer" className="text-sky-500 hover:text-white transition-all duration-300">
               <FaTwitter size={34} />
             </a>
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-sky-500 hover:text-white transition-all duration-300">
+            <a href="https://www.facebook.com/profile.php?id=61574176208420" target="_blank" rel="noopener noreferrer" className="text-sky-500 hover:text-white transition-all duration-300">
               <FaFacebook size={34} />
             </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-sky-500 hover:text-white transition-all duration-300">
+            <a href="https://www.instagram.com/devnex_hi_tech?igsh=MjB1NmIzaHQ4b3Fz" target="_blank" rel="noopener noreferrer" className="text-sky-500 hover:text-white transition-all duration-300">
               <FaInstagram size={34} />
             </a>
           </div>

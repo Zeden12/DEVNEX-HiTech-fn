@@ -1,6 +1,8 @@
 // src/layouts/MainLayout.jsx
+import React from 'react';
 import Navbar from "../components/NavBar";
 import Footer from "../components/Footer";
+import WhatsappButton from '../components/WhatsappButton'; 
 
 const MainLayout = ({ children }) => {
   return (
@@ -10,6 +12,7 @@ const MainLayout = ({ children }) => {
         {children}
       </main>
       <Footer />
+      <WhatsappButton />
     </div>
   );
 };
