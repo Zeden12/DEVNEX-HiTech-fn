@@ -17,7 +17,7 @@ import NotFoundPage from "./pages/NotFoundPage";
 const App = () => {
   return (
     <Router>
-      <Loader /> {/* Add the Loader */}
+      <Loader />
       <CustomCursor />
       <MainLayout>
         <Routes>
@@ -30,7 +30,7 @@ const App = () => {
           <Route path="/career" element={<CollaboratePage />} />
           <Route path="/internships" element={<InternshipsPage />} />
           <Route path="/jobs" element={<JobsPage />} />
-          <Route path="*" element={<NotFoundPage />} /> {/* Catch-all route for 404 */}
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </MainLayout>
     </Router>

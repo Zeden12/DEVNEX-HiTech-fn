@@ -64,7 +64,7 @@ const AboutSection = () => {
               Devnex Hitech
             </span>
           </h2>
-          <p className="mb-6 leading-8 text-lg md:text-xl">
+          <p className="mb-6 leading-8 text-xl md:text-xl">
             We are a team of passionate software developers dedicated to delivering
             innovative digital solutions that set businesses apart. Our commitment
             to excellence and creativity makes us the best choice for your projects.

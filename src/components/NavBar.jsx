@@ -119,7 +119,7 @@ const Navbar = () => {
         </div>
         <Link
           to="/contact"
-          className="hidden md:block border border-sky-500 text-white px-8 py-3 rounded-full hover:bg-sky-500 hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl text-lg font-semibold transform hover:scale-105"
+          className="hidden md:block border border-sky-500 text-white px-6 py-2 rounded-full hover:bg-sky-500 hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl text-lg font-semibold transform hover:scale-105"
         >
           CONTACT US
         </Link>
@@ -184,7 +184,7 @@ const Navbar = () => {
             )}
           </div>
 
-          <Link to="/contact" className="w-full border border-sky-500 text-white px-7 py-2 rounded-full hover:bg-sky-500 hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl text-lg font-semibold transform hover:scale-105 mt-4" onClick={toggleMobileMenu}>
+          <Link to="/contact" className="w-full border border-sky-500 text-white px-5 py-2 rounded-full hover:bg-sky-500 hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl text-lg font-semibold transform hover:scale-105 mt-4" onClick={toggleMobileMenu}>
             CONTACT US
           </Link>
         </div>
