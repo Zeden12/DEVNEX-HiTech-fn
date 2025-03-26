@@ -34,7 +34,6 @@ const AboutPage = () => {
 
   return (
     <div className="min-h-screen bg-[#1a1f26] text-white">
-      {/* Header */}
       <div className="pt-[10%] bg-[#111518]/90 backdrop-blur-md py-12 border-b border-sky-500/20">
         <div className="container mx-auto px-5 lg:px-5">
           <div className="flex items-center space-x-2 text-lg text-[#E7EBEE]">
