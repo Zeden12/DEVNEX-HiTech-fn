@@ -20,7 +20,7 @@ const Loader = ({ isLoading, progress }) => {
           </div>
         </div>
         <h1 className="text-3xl md:text-4xl font-bold text-white">
-          Welcome to <span className="bg-gradient-to-r from-sky-500 to-purple-500 bg-clip-text text-transparent">Devnex HiTech</span>
+          Welcome to <span className="bg-gradient-to-r from-sky-500 to-purple-500 bg-clip-text text-transparent">DevNex HiTech</span>
         </h1>
         <p className="text-lg text-[#E7EBEE] mt-2">
           We transform your ideas into reality.

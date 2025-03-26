@@ -80,7 +80,7 @@ const Footer = () => {
 
         <div className="text-center sm:text-left">
           <h1 className="text-2xl font-bold mb-2">DevNeX HiTech</h1>
-          <p className="text-lg mb-4 text-[#E7EBEE]">Empowering Your Digital World.</p>
+          <p className="text-lg mb-4 text-[#E7EBEE]">Powered by <br /><span className='text-1xl font-bold bg-gradient-to-r from-sky-500 to-purple-500 bg-clip-text text-transparent cursor-pointer'>SKAFF INVEST R GROUP</span></p>
           <div className="flex justify-center sm:justify-start gap-4">
             <a href="https://www.linkedin.com/company/devnex-hitech" target="_blank" rel="noopener noreferrer" className="text-sky-500 hover:text-white transition-all duration-300">
               <FaLinkedin size={30} />
@@ -100,7 +100,7 @@ const Footer = () => {
 
       <div className="bg-[#0d1217] py-10 mt-auto">
         <div className="container mx-auto text-center text-lg text-[#E7EBEE]">
-          <p>&copy; 2025 DEVNEX Hi-Tech. All Rights Reserved.</p>
+          <p>&copy; 2025 DevNex HiTech. All Rights Reserved.</p>
         </div>
       </div>
     </footer>
