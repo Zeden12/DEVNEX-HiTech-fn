@@ -5,13 +5,13 @@ import { Link } from 'react-router-dom';
 const ServicesSection = () => {
   return (
     <section className="py-20 bg-[#222] text-white">
-      <div className="container mx-auto text-center mb-16 px-6 md:px-12 lg:px-5">
+      <div className="container mx-auto text-center mb-16 px-6 md:px-12 lg:px-10">
         <p className="text-2xl md:text-2xl font-semibold text-[#E7EBEE] leading-relaxed">
           At DEVNEX HiTech, we specialize in delivering innovative solutions that empower your business to thrive in the digital age. Our services are designed to meet your unique needs and drive your success.
         </p>
       </div>
 
-      <div className="container mx-auto text-right mb-12 px-5 md:px-12 lg:px-5">
+      <div className="container mx-auto text-right mb-12 px-6 md:px-12 lg:px-10">
         <h2 className="text-3xl font-bold uppercase">
           <span className="bg-gradient-to-r from-sky-400 to-purple-400 bg-clip-text text-transparent">
             Our Services
@@ -19,7 +19,7 @@ const ServicesSection = () => {
         </h2>
         <div className="ml-auto w-2/5 mt-2 h-1 bg-gradient-to-r from-sky-500 to-purple-500 rounded-full"></div>
       </div>
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 px-6 md:px-12 lg:px-5">
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 px-6 md:px-12 lg:px-10">
         {[
           {
             icon: <FaCode size={40} className="text-sky-400" />,

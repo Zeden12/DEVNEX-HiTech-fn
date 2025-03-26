@@ -4,7 +4,7 @@ import { FaLaptop, FaCloud, FaHeadphones, FaRocket, FaGraduationCap } from 'reac
 const IconBoxSection = () => {
   return (
     <section className="py-12 bg-[#1a1f26]">
-      <div className="container mx-auto px-4 md:px-8 lg:px-5">
+      <div className="container mx-auto px-4 md:px-8 lg:px-10">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 md:gap-6">
           {[
             {

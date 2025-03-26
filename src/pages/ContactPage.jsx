@@ -90,7 +90,7 @@ const ContactPage = () => {
   return (
     <div className="min-h-screen bg-[#1a1f26] text-white">
       <div className="pt-[10%] bg-[#111518]/90 backdrop-blur-md py-12 border-b border-sky-500/20">
-        <div className="container mx-auto px-5 lg:px-5">
+        <div className="container mx-auto px-6 lg:px-10">
           <div className="flex items-center space-x-2 text-lg text-[#E7EBEE] mb-6 lg:mb-0">
             <span className="text-sky-500">/</span>
             <Link to="/" className="hover:text-sky-500">
@@ -142,7 +142,7 @@ const ContactPage = () => {
         ></iframe>
       </div>
 
-      <div id="contact-form" className="container mx-auto px-6 lg:px-20 py-16">
+      <div id="contact-form" className="container mx-auto px-6 lg:px-10 py-16">
         <div className="max-w-2xl mx-auto">
           <h2 className="text-3xl font-bold text-[#E7EBEE] mb-8 text-center">
             Let's Talk

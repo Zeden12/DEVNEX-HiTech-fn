@@ -53,8 +53,8 @@ const Navbar = () => {
         showNavbar ? "translate-y-0" : "-translate-y-full"
       }`}
     >
-      <div className="container mx-auto flex justify-between items-center py-9 px-5 md:px-12 lg:px-5">
-        <Link to="/" className="text-3xl font-bold bg-gradient-to-r from-sky-500 to-purple-500 bg-clip-text text-transparent">
+      <div className="container mx-auto flex justify-between items-center py-8 px-6 md:px-12 lg:px-10">
+        <Link to="/" className="text-2xl font-bold bg-gradient-to-r from-sky-500 to-purple-500 bg-clip-text text-transparent">
           DevNex HiTech
         </Link>
         <button
@@ -65,19 +65,19 @@ const Navbar = () => {
         </button>
         <div className="hidden md:flex gap-8 font-text-medium items-center">
           <Link to="/" className="text-[#E7EBEE] hover:text-sky-500 transition duration-300 flex items-center gap-1">
-            HOME {isActive('/') && <FaCheck className="text-sky-500" />}
+            Home {isActive('/') && <FaCheck className="text-sky-500" />}
           </Link>
 
           <Link to="/about" className="text-[#E7EBEE] hover:text-sky-500 transition duration-300 flex items-center gap-1">
-            ABOUT US {isActive('/about') && <FaCheck className="text-sky-500" />}
+            About Us {isActive('/about') && <FaCheck className="text-sky-500" />}
           </Link>
 
           <Link to="/services" className="text-[#E7EBEE] hover:text-sky-500 transition duration-300 flex items-center gap-1">
-            SERVICES {isActive('/services') && <FaCheck className="text-sky-500" />}
+            Services {isActive('/services') && <FaCheck className="text-sky-500" />}
           </Link>
 
           <Link to="/career" className="text-[#E7EBEE] hover:text-sky-500 transition duration-300 flex items-center gap-1">
-            CAREERS {isActive('/career') && <FaCheck className="text-sky-500" />}
+            Career {isActive('/career') && <FaCheck className="text-sky-500" />}
           </Link>
 
           <div className="relative" ref={dropdownRef}>
@@ -85,7 +85,7 @@ const Navbar = () => {
               className="text-[#E7EBEE] hover:text-sky-500 flex items-center gap-1 transition duration-300"
               onClick={() => setOpenDropdown(!openDropdown)}
             >
-              OPPORTUNITIES <FaChevronDown className={`transition-transform ${openDropdown ? 'rotate-180' : ''}`} />
+              Opportunities <FaChevronDown className={`transition-transform ${openDropdown ? 'rotate-180' : ''}`} />
             </button>
 
             {openDropdown && (
@@ -130,29 +130,29 @@ const Navbar = () => {
           to="/contact"
           className="hidden md:block border border-sky-500 text-white px-6 py-2 rounded-full hover:bg-sky-500 hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl text-lg font-semibold transform hover:scale-105"
         >
-          CONTACT US
+          Contact Us
         </Link>
       </div>
       {isMobileMenuOpen && (
         <div className="md:hidden bg-[#111518]/90 backdrop-blur-md w-full px-6 pb-6">
           <Link to="/" className="block py-3 text-[#E7EBEE] hover:text-sky-500 transition duration-300 flex items-center gap-2" onClick={toggleMobileMenu}>
             {isActive('/') && <FaCheck className="text-sky-500" />}
-            HOME
+            Home
           </Link>
 
           <Link to="/about" className="block py-3 text-[#E7EBEE] hover:text-sky-500 transition duration-300 flex items-center gap-2" onClick={toggleMobileMenu}>
             {isActive('/about') && <FaCheck className="text-sky-500" />}
-            ABOUT US
+            About Us
           </Link>
 
           <Link to="/services" className="block py-3 text-[#E7EBEE] hover:text-sky-500 transition duration-300 flex items-center gap-2" onClick={toggleMobileMenu}>
             {isActive('/services') && <FaCheck className="text-sky-500" />}
-            SERVICES
+            Services
           </Link>
 
           <Link to="/career" className="block py-3 text-[#E7EBEE] hover:text-sky-500 transition duration-300 flex items-center gap-2" onClick={toggleMobileMenu}>
             {isActive('/career') && <FaCheck className="text-sky-500" />}
-            CAREERS
+            Career
           </Link>
 
           <div className="relative py-3" ref={dropdownRef}>
@@ -160,7 +160,7 @@ const Navbar = () => {
               className="text-[#E7EBEE] hover:text-sky-500 flex items-center gap-2 transition duration-300"
               onClick={() => setOpenDropdown(!openDropdown)}
             >
-              OPPORTUNITIES <FaChevronDown className={`transition-transform ${openDropdown ? 'rotate-180' : ''}`} />
+              Opportunities <FaChevronDown className={`transition-transform ${openDropdown ? 'rotate-180' : ''}`} />
             </button>
 
             {openDropdown && (
@@ -171,7 +171,7 @@ const Navbar = () => {
                   onClick={() => { closeDropdown(); toggleMobileMenu(); }}
                 >
                   {isActive('/devnex-academy') && <FaCheck className="text-sky-500" />}
-                  DEVNEX Academy
+                  DevNex Academy
                 </Link>
                 <Link
                   to="/career"
@@ -206,7 +206,7 @@ const Navbar = () => {
             className="w-full border border-sky-500 text-white px-5 py-2 rounded-full hover:bg-sky-500 hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl text-lg font-semibold transform hover:scale-105 mt-6 block text-center" 
             onClick={toggleMobileMenu}
           >
-            CONTACT US
+            Contact Us
           </Link>
         </div>
       )}

@@ -6,7 +6,7 @@ const ServicesPage = () => {
   return (
     <div className="min-h-screen bg-gray-900 text-white">
       <div className="pt-[10%] bg-[#111518]/90 backdrop-blur-md py-12 border-b border-sky-500/20">
-        <div className="container mx-auto px-5 lg:px-5">
+        <div className="container mx-auto px-6 lg:px-10">
           <div className="flex items-center space-x-2 text-lg text-[#E7EBEE]">
             <span className="text-sky-500">/</span>
             <Link to="/" className="hover:text-sky-500">Homepage</Link>
@@ -20,7 +20,7 @@ const ServicesPage = () => {
         </div>
       </div>
 
-      <div className="container mx-auto px-5 lg:px-5 py-16">
+      <div className="container mx-auto px-6 lg:px-10 py-16">
         <div className="mb-16">
           <h2 className="text-4xl font-bold bg-gradient-to-r from-sky-500 to-purple-500 bg-clip-text text-transparent">
             Explore All the Services We Offer You

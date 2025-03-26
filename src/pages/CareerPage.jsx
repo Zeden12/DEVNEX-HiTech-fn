@@ -96,7 +96,7 @@ const CollaboratePage = () => {
   return (
     <div className="min-h-screen bg-[#1a1f26] text-white">
       <div className="pt-[10%] bg-[#111518]/90 backdrop-blur-md py-12 border-b border-sky-500/20">
-        <div className="container mx-auto px-5 lg:px-5">
+        <div className="container mx-auto px-6 lg:px-10">
           <div className="flex items-center space-x-2 text-lg text-[#E7EBEE]">
             <span className="text-sky-500">/</span>
             <Link to="/" className="hover:text-sky-500">
@@ -137,7 +137,7 @@ const CollaboratePage = () => {
         </div>
       </div>
 
-      <div className="container mx-auto px-5 lg:px-5 py-16">
+      <div className="container mx-auto px-6 lg:px-10 py-16">
         <h2 className="text-4xl font-bold bg-gradient-to-r from-sky-500 to-purple-500 bg-clip-text text-transparent mb-8">
           How It Works
         </h2>
@@ -206,7 +206,7 @@ const CollaboratePage = () => {
       </div>
 
       <div id="collaborate-form" className="bg-[#111518]/90 py-16">
-        <div className="container mx-auto px-5 lg:px-5">
+        <div className="container mx-auto px-6 lg:px-10">
           <h2 className="text-4xl font-bold bg-gradient-to-r from-sky-500 to-purple-500 bg-clip-text text-transparent mb-8 text-center">
             Book Demo To Start You Journey
           </h2>

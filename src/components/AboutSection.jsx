@@ -18,7 +18,7 @@ const AboutSection = () => {
 
   return (
     <section className="bg-[#1a1f26] text-white py-10">
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 px-5 items-center">
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 px-10 items-center">
         <div className="relative">
 
           <motion.div
