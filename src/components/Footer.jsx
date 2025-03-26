@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
   return (
     <footer className="bg-[#111518] text-white flex flex-col min-h-screen">
-      <div className="flex-grow flex flex-col justify-center items-center px-20 py-16">
+      <div className="flex-grow flex flex-col justify-center items-center px-6 py-16">
         <h2 className="text-4xl sm:text-5xl font-bold mb-4 text-center">
           LET'S TURN YOUR IDEA
         </h2>
@@ -20,7 +20,7 @@ const Footer = () => {
           </Link>
         </div>
       </div>
-      <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 px-5 py-12">
+      <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 px-6 lg:px-20 py-12">
         <div className="text-center sm:text-left">
           <h4 className="text-2xl font-bold mb-4">NAVIGATION</h4>
           <ul>
