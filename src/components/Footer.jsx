@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <footer className="bg-[#111518] text-white flex flex-col min-h-screen">
+    <footer className="bg-[#111518] text-white flex flex-col min-h-screen lg:px-20">
       <div className="flex-grow flex flex-col justify-center items-center px-6 py-16">
         <h2 className="text-4xl sm:text-5xl font-bold mb-4 text-center">
           LET'S TURN YOUR IDEA
