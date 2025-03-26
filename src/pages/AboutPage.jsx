@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaArrowRight, FaArrowLeft, FaLinkedin, FaInstagram } from "react-icons/fa";
-
-// Import images from assets
-import Ernest from "../assets/ernest.jpg"; // Ensure this matches the actual filename
+import Ernest from "../assets/ernest.jpg";
 import Zidan from "../assets/zidan.jpg";
 import Amin from "../assets/amin.jpg";
 import Herve from "../assets/herve.jpg";
@@ -38,7 +36,7 @@ const AboutPage = () => {
     <div className="min-h-screen bg-[#1a1f26] text-white">
       {/* Header */}
       <div className="pt-[10%] bg-[#111518]/90 backdrop-blur-md py-12 border-b border-sky-500/20">
-        <div className="container mx-auto px-6 lg:px-20">
+        <div className="container mx-auto px-5 lg:px-5">
           <div className="flex items-center space-x-2 text-lg text-[#E7EBEE]">
             <span className="text-sky-500">/</span>
             <Link to="/" className="hover:text-sky-500">Homepage</Link>
@@ -52,9 +50,7 @@ const AboutPage = () => {
         </div>
       </div>
 
-      {/* About Section */}
-      <div className="container mx-auto px-6 lg:px-20 py-16 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-        {/* Left Side - About Text */}
+      <div className="container mx-auto px-5 lg:px-20 py-16 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div>
           <h2 className="text-4xl font-bold bg-gradient-to-r from-sky-500 to-purple-500 bg-clip-text text-transparent mb-6">
             Who Are We?
@@ -71,7 +67,6 @@ const AboutPage = () => {
             Whether you’re a startup or an enterprise, our goal is to elevate your business to the next level with premium, user-centric solutions.
           </p>
 
-          {/* More About Our Team */}
           <div className="mt-8">
             <h3 className="text-2xl font-bold bg-gradient-to-r from-sky-500 to-purple-500 bg-clip-text text-transparent mb-4">
               More About Our Team
@@ -88,26 +83,21 @@ const AboutPage = () => {
           </div>
         </div>
 
-        {/* Right Side - Team Profiles */}
         <div>
-          {/* Removed Animated Text */}
-
           <div className="grid grid-cols-2 gap-8">
             {visibleMembers.map((member, index) => (
               <div
                 key={index}
                 className={`relative bg-[#111518]/90 backdrop-blur-md rounded-xl overflow-hidden border border-sky-500/20 shadow-lg transition-all duration-300 transform hover:scale-105 hover:z-10 group ${
-                  index % 2 === 1 ? "mt-12" : "" // Staggered layout
+                  index % 2 === 1 ? "mt-12" : ""
                 }`}
               >
-                {/* Image */}
                 <img
                   src={member.image}
                   alt={member.name}
                   className="w-full h-80 object-cover object-top transition-all duration-300 group-hover:scale-110 group-hover:opacity-50"
                 />
 
-                {/* Text and Icons (Moved to the bottom) */}
                 <div className="absolute inset-x-0 bottom-0 p-4 bg-black/50 backdrop-blur-sm">
                   <h3 className="text-xl font-bold text-[#E7EBEE] text-center">{member.name}</h3>
                   <p className="text-lg text-[#E7EBEE] text-center mb-2">{member.position}</p>

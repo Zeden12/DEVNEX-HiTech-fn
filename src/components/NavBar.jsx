@@ -49,7 +49,7 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto flex justify-between items-center py-8 px-5 md:px-12 lg:px-5">
-        <Link to="/" className="text-white text-2xl font-bold">
+        <Link to="/" className="text-white text-2xl font-bold bg-gradient-to-r from-sky-400 to-purple-400">
           DevNex HiTech
         </Link>
         <button

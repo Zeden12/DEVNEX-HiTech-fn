@@ -6,7 +6,7 @@ const NotFoundPage = () => {
   return (
     <div className="min-h-screen bg-[#1a1f26] text-white">
       <div className="pt-[10%] bg-[#111518]/90 backdrop-blur-md py-12 border-b border-sky-500/20">
-        <div className="container mx-auto px-6 lg:px-20">
+        <div className="container mx-auto px-5 lg:px-5">
           <div className="flex items-center space-x-2 text-lg text-[#E7EBEE]">
             <span className="text-sky-500">/</span>
             <Link to="/" className="hover:text-sky-500">
@@ -22,7 +22,7 @@ const NotFoundPage = () => {
               404
             </h1>
             <p className="text-2xl text-[#E7EBEE] mt-4">
-              Oops! The page you're looking for doesn't exist.
+              Oops! The page you're looking for maybe doesn't exist.
             </p>
           </div>
         </div>
@@ -38,13 +38,13 @@ const NotFoundPage = () => {
         <div className="flex justify-center gap-4">
           <Link
             to="/"
-            className="bg-gradient-to-r from-sky-500 to-purple-500 text-white px-8 py-3 rounded-lg font-semibold hover:from-sky-600 hover:to-purple-600 transition-all duration-300 transform hover:scale-105 inline-block"
+            className="bg-gradient-to-r from-sky-500 to-purple-500 text-white px-7 py-3 rounded-lg font-semibold hover:from-sky-600 hover:to-purple-600 transition-all duration-300 transform hover:scale-105 inline-block"
           >
             Go to Homepage <FaArrowRight className="inline-block ml-2" />
           </Link>
           <Link
             to="/contact"
-            className="bg-gradient-to-r from-sky-500 to-purple-500 text-white px-8 py-3 rounded-lg font-semibold hover:from-sky-600 hover:to-purple-600 transition-all duration-300 transform hover:scale-105 inline-block"
+            className="bg-gradient-to-r from-sky-500 to-purple-500 text-white px-7 py-3 rounded-lg font-semibold hover:from-sky-600 hover:to-purple-600 transition-all duration-300 transform hover:scale-105 inline-block"
           >
             Contact Us <FaArrowRight className="inline-block ml-2" />
           </Link>

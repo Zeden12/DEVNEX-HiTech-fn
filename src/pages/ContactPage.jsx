@@ -15,7 +15,6 @@ const ContactPage = () => {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  // Hide message toasts 
   useEffect(() => {
     if (formStatus.message) {
       const timer = setTimeout(() => {
@@ -91,7 +90,7 @@ const ContactPage = () => {
   return (
     <div className="min-h-screen bg-[#1a1f26] text-white">
       <div className="pt-[10%] bg-[#111518]/90 backdrop-blur-md py-12 border-b border-sky-500/20">
-        <div className="container mx-auto px-6 lg:px-20">
+        <div className="container mx-auto px-5 lg:px-5">
           <div className="flex items-center space-x-2 text-lg text-[#E7EBEE] mb-6 lg:mb-0">
             <span className="text-sky-500">/</span>
             <Link to="/" className="hover:text-sky-500">

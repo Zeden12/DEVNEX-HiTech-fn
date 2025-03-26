@@ -22,7 +22,7 @@ const JobsPage = () => {
               Job Opportunities
             </h1>
             <p className="text-lg text-[#E7EBEE] mt-4">
-              Stay Tuned for Future Job Openings
+              Stay Tuned for Future Opportunities
             </p>
           </div>
         </div>
