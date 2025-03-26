@@ -15,12 +15,12 @@ const AboutPage = () => {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
 
   const teamMembers = [
-    { name: "Mr Reuben", position: "Founder", image: Ernest, linkedin: "https://www.linkedin.com/", instagram: "https://www.instagram.com/" },
-    { name: "Ernest HAGUMA KWIZERA", position: "CEO & Co-founder", image: Zidan, linkedin: "https://www.linkedin.com/", instagram: "https://www.instagram.com/" },
+    { name: "Mr Reuben", position: "Founder", image: Ernest, linkedin: "https://www.linkedin.com/in/ernest-haguma-kwizera-709195241/", instagram: "https://www.instagram.com/squach_cj_zeden/" },
+    { name: "Ernest HAGUMA KWIZERA", position: "CEO & Co-founder", image: Zidan, linkedin: "https://www.linkedin.com/in/ernest-haguma-kwizera-709195241/", instagram: "https://www.instagram.com/squach_cj_zeden/" },
     { name: "GATANAZI Amin", position: "Backend Developer", image: Amin, linkedin: "https://www.linkedin.com/", instagram: "https://www.instagram.com/" },
     { name: "IRADUKUNDA Ella Herve", position: "Frontend Developer", image: Herve, linkedin: "https://www.linkedin.com/", instagram: "https://www.instagram.com/" },
     { name: "IKIREZI Dina", position: "Full Stack Developer", image: Ella, linkedin: "https://www.linkedin.com/", instagram: "https://www.instagram.com/" },
-    { name: "RUKUNDO BAZIGA Irene Serge", position: "DevOps Engineer", image: Zidan, linkedin: "https://www.linkedin.com/", instagram: "https://www.instagram.com/" },
+    { name: "RUKUNDO BAZIGA Irene Serge", position: "DevOps Engineer", image: Zeden, linkedin: "https://www.linkedin.com/", instagram: "https://www.instagram.com/" },
   ];
 
   const testimonials = [

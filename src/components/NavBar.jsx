@@ -48,9 +48,9 @@ const Navbar = () => {
         showNavbar ? "translate-y-0" : "-translate-y-full"
       }`}
     >
-      <div className="container mx-auto flex justify-between items-center py-12 px-6 md:px-12 lg:px-20">
+      <div className="container mx-auto flex justify-between items-center py-8 px-5 md:px-12 lg:px-5">
         <Link to="/" className="text-white text-2xl font-bold">
-          DEVNEX Hi-Tech
+          DevNex HiTech
         </Link>
         <button
           className="text-white text-2xl md:hidden"
@@ -90,7 +90,7 @@ const Navbar = () => {
                   className="block py-3 px-6 text-[#E7EBEE] hover:bg-sky-500 hover:text-white transition duration-300"
                   onClick={closeDropdown}
                 >
-                  DEVNEX Academy
+                  DevNex Academy
                 </Link>
                 <Link
                   to="/career"

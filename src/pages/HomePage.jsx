@@ -6,17 +6,15 @@ import StatsSection from "../components/StatsSection";
 import PartnersSection from "../components/PartnersSection";
 import OpportunitiesBanner from '../components/OpportunitiesBanner';
 import DevnexOpportunities from "../components/DevnexOpportunities";
+import IconBoxSection from '../components/IconBoxSection';
 
 const HomePage = () => {
   return (
     <div>
-      <div id="hero">
-        <HeroSection />
-      </div>
-        <AboutSection />
-      <div id="services">
-        <ServicesSection />
-      </div>
+      <HeroSection />
+      <IconBoxSection />
+      <AboutSection />
+      <ServicesSection />
       <DevnexOpportunities />
       <StatsSection />
       <OpportunitiesBanner />

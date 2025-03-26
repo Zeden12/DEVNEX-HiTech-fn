@@ -17,8 +17,8 @@ const AboutSection = () => {
   };
 
   return (
-    <section className="bg-[#1a1f26] text-white py-20">
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 px-10 items-center">
+    <section className="bg-[#1a1f26] text-white py-10">
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 px-5 items-center">
         <div className="relative">
 
           <motion.div
@@ -27,11 +27,11 @@ const AboutSection = () => {
             transition={{ duration: 1 }}
             className="mb-10 text-left"
           >
-            <h1 className="text-4xl font-bold">
+            <h1 className="text-3xl font-bold">
               <span className="bg-gradient-to-r from-sky-400 to-purple-400 bg-clip-text text-transparent">
                 WHY CHOOSE US
               </span>
-              <div className="w-3/4 mt-2 h-1.5 bg-gradient-to-r from-sky-500 to-purple-500 rounded-full"></div>
+              <div className="w-3/4 mt-2 h-1 bg-gradient-to-r from-sky-500 to-purple-500 rounded-full"></div>
             </h1>
           </motion.div>
           <motion.div
@@ -61,36 +61,30 @@ const AboutSection = () => {
           <h2 className="text-3xl font-bold mb-6">
             Hello, We Are{' '}
             <span className="bg-gradient-to-r from-sky-400 to-purple-400 bg-clip-text text-transparent">
-              Devnex Hitech
+              DevNex Hitech
             </span>
           </h2>
-          <p className="mb-6 leading-8 text-xl md:text-xl">
+          <p className="mb-5 leading-8 text-xl md:text-xl">
             We are a team of passionate software developers dedicated to delivering
             innovative digital solutions that set businesses apart. Our commitment
             to excellence and creativity makes us the best choice for your projects.
           </p>
-          <p className="mb-6 leading-8 text-lg md:text-xl">
-            At Devnex Hitech, we believe in the power of technology to transform businesses. 
-            Our mission is to provide cutting-edge solutions that drive growth, efficiency, 
-            and success. With a focus on quality and innovation, we strive to exceed our 
-            clients' expectations and deliver exceptional results.
-          </p>
           {[
             {
               title: 'Our Vision',
-              icon: <FaEye className="text-sky-500 text-2xl" />,
+              icon: <FaEye className="text-sky-500 text-xl" />,
               content:
                 'Our vision is to become the leading tech company globally, recognized for delivering premium digital solutions that transform industries. We aim to push the boundaries of innovation and set new standards in technology, ensuring our clients stay ahead in the digital race.',
             },
             {
               title: 'Our Mission',
-              icon: <FaBullseye className="text-sky-500 text-2xl" />,
+              icon: <FaBullseye className="text-sky-500 text-xl" />,
               content:
                 'Our mission is to empower businesses with high-quality, reliable, and innovative software solutions. We strive to understand our clients’ unique needs and provide tailored solutions that drive growth, efficiency, and success in an ever-evolving digital landscape.',
             },
             {
               title: 'Our Goals',
-              icon: <FaFlag className="text-sky-500 text-2xl" />,
+              icon: <FaFlag className="text-sky-500 text-xl" />,
               content:
                 'Our primary goal is to create world-class products that exceed client expectations and improve digital experiences. We are committed to fostering long-term relationships with our clients, delivering exceptional value, and continuously improving our processes to achieve excellence in everything we do.',
             },

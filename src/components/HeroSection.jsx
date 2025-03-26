@@ -1,19 +1,19 @@
 import React from 'react';
-import IconBoxSection from './IconBoxSection';
+import { Link } from 'react-router-dom';
 
 const HeroSection = () => {
   const heroImage = new URL('../assets/hero2.jpg', import.meta.url).href;
 
   return (
     <section
-      className="relative bg-cover bg-center min-h-[120vh]"
+      className="relative bg-cover bg-center min-h-[100vh]"
       style={{ backgroundImage: `url(${heroImage})` }}
     >
-      <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-start px-6 md:px-12 lg:px-20 pt-32 pb-32">
+      <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-start px-5 md:px-12 lg:px-20 pt-32 pb-32">
         <h1 className="text-white text-5xl md:text-6xl font-bold mb-6 uppercase transform transition-all duration-300 hover:scale-105">
           Welcome to{' '}
           <span className="bg-gradient-to-r from-sky-500 to-purple-500 bg-clip-text text-transparent">
-            DEVNEX HiTech
+            DevNeX HiTech
           </span>
         </h1>
 
@@ -23,16 +23,19 @@ const HeroSection = () => {
         </p>
 
         <div className="flex flex-col md:flex-row gap-6 md:gap-8">
-          <button className="border border-sky-500 text-white px-6 py-2 rounded-full hover:bg-sky-500 hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl text-lg md:text-xl font-semibold transform hover:scale-105">
-            Learn More
-          </button>
-          <button className="border border-purple-500 text-white px-6 py-2 rounded-full hover:bg-purple-500 hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl text-lg md:text-xl font-semibold transform hover:scale-105">
+          <Link
+            to="/services"
+            className="border border-sky-500 text-white px-6 py-2 rounded-full hover:bg-sky-500 hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl text-lg md:text-xl font-semibold transform hover:scale-105"
+          >
+            Get Started
+          </Link>
+          <Link
+            to="/contact"
+            className="border border-purple-500 text-white px-6 py-2 rounded-full hover:bg-purple-500 hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl text-lg md:text-xl font-semibold transform hover:scale-105"
+          >
             Contact Us
-          </button>
+          </Link>
         </div>
-      </div>
-      <div className="absolute bottom-0 w-full">
-        <IconBoxSection />
       </div>
     </section>
   );
