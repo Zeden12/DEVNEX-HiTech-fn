@@ -53,7 +53,7 @@ const Navbar = () => {
         showNavbar ? "translate-y-0" : "-translate-y-full"
       }`}
     >
-      <div className="container mx-auto flex justify-between items-center py-8 px-6 md:px-12 lg:px-10">
+      <div className="container mx-auto flex justify-between items-center py-8 px-6 md:px-12 lg:px-20">
         <Link to="/" className="text-2xl font-bold bg-gradient-to-r from-sky-500 to-purple-500 bg-clip-text text-transparent">
           DevNex HiTech
         </Link>

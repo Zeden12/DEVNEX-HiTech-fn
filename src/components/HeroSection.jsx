@@ -9,7 +9,7 @@ const HeroSection = () => {
       className="relative bg-cover bg-center min-h-[70vh] md:min-h-[100vh]"
       style={{ backgroundImage: `url(${heroImage})` }}
     >
-      <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-start px-6 md:px-12 lg:px-26 pt-32 md:pt-48 pb-16">
+      <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-start px-6 md:px-12 lg:px-20 pt-32 md:pt-48 pb-16">
         <div className="mt-8 md:mt-16">
           <h1 className="text-white text-3xl sm:text-4xl md:text-6xl font-bold mb-4 md:mb-6 uppercase">
             Welcome to{' '}

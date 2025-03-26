@@ -5,7 +5,7 @@ import { InView } from 'react-intersection-observer';
 const StatsSection = () => {
   return (
     <section className="py-20 bg-[#1a1f26] text-white text-center">
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 px-6 lg:px-10">
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 px-6 lg:px-20">
         {[
           { stat: 20, title: "Projects Completed" },
           { stat: 8, title: "Open Projects" },
