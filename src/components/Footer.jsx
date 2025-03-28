@@ -83,16 +83,16 @@ const Footer = () => {
           <p className="text-lg mb-4 text-[#E7EBEE]">Powered by <br /><span className='text-1xl font-bold bg-gradient-to-r from-sky-500 to-purple-500 bg-clip-text text-transparent cursor-pointer'>SKAFF INVEST R GROUP</span></p>
           <div className="flex justify-center sm:justify-start gap-4">
             <a href="https://www.linkedin.com/company/devnex-hitech" target="_blank" rel="noopener noreferrer" className="text-sky-500 hover:text-white transition-all duration-300">
-              <FaLinkedin size={30} />
+              <FaLinkedin size={28} />
             </a>
             <a href="https://x.com/DevNex_Hi_Tech?s=09" target="_blank" rel="noopener noreferrer" className="text-sky-500 hover:text-white transition-all duration-300">
-              <FaTwitter size={30} />
+              <FaTwitter size={28} />
             </a>
             <a href="https://www.facebook.com/profile.php?id=61574176208420" target="_blank" rel="noopener noreferrer" className="text-sky-500 hover:text-white transition-all duration-300">
-              <FaFacebook size={30} />
+              <FaFacebook size={28} />
             </a>
             <a href="https://www.instagram.com/devnex_hi_tech?igsh=MjB1NmIzaHQ4b3Fz" target="_blank" rel="noopener noreferrer" className="text-sky-500 hover:text-white transition-all duration-300">
-              <FaInstagram size={30} />
+              <FaInstagram size={28} />
             </a>
           </div>
         </div>
