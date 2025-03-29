@@ -6,7 +6,7 @@ const ServicesSection = () => {
   return (
     <section className="py-20 bg-[#222] text-white">
       <div className="container mx-auto text-center mb-16 px-6 md:px-12 lg:px-20">
-        <p className="text-2xl md:text-2xl font-semibold text-[#E7EBEE] leading-relaxed">
+        <p className="text-1xl md:text-1xl font-semibold text-[#E7EBEE] leading-relaxed">
           At DEVNEX HiTech, we specialize in delivering innovative solutions that empower your business to thrive in the digital age. Our services are designed to meet your unique needs and drive your success.
         </p>
       </div>

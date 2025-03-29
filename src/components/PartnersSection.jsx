@@ -32,7 +32,7 @@ const PartnersSection = () => {
   return (
     <section className="py-16 bg-[#111518] text-white">
       <div className="container mx-auto text-center mb-16 px-6 md:px-12 lg:px-20">
-        <p className="text-2xl md:text-3xl font-semibold text-[#E7EBEE] leading-relaxed">
+        <p className="text-1xl md:text-1xl font-semibold text-[#E7EBEE] leading-relaxed">
           At DEVNEX HiTech, we collaborate with industry leaders to deliver exceptional solutions that empower your business to thrive in the digital age.
         </p>
       </div>
