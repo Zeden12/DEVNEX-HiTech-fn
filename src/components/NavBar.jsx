@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { FaChevronDown, FaBars, FaTimes, FaCheck } from 'react-icons/fa';
 import { Link, useLocation } from 'react-router-dom';
+import logo from '../assets/devnex.jpg';
 
 const Navbar = () => {
   const location = useLocation();
@@ -54,28 +55,30 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto flex justify-between items-center py-8 px-6 md:px-12 lg:px-20">
-        <Link to="/" className="text-2xl font-bold bg-gradient-to-r from-sky-500 to-purple-500 bg-clip-text text-transparent">
-          DevNex HiTech
+        <Link to="/" className="flex items-center gap-3">
+          <img src={logo} alt="DevNex Logo" className="w-10 h-10 object-contain rounded-full" />
+          <span className="text-2xl font-bold bg-gradient-to-r from-sky-500 to-purple-500 bg-clip-text text-transparent">
+            DevNex Hi-Tech
+          </span>
         </Link>
+
         <button
           className="text-white text-2xl md:hidden"
           onClick={toggleMobileMenu}
         >
           {isMobileMenuOpen ? <FaTimes /> : <FaBars />}
         </button>
+
         <div className="hidden md:flex gap-8 font-text-medium items-center">
           <Link to="/" className="text-[#E7EBEE] hover:text-sky-500 transition duration-300 flex items-center gap-1">
             Home {isActive('/') && <FaCheck className="text-sky-500" />}
           </Link>
-
           <Link to="/about" className="text-[#E7EBEE] hover:text-sky-500 transition duration-300 flex items-center gap-1">
             About Us {isActive('/about') && <FaCheck className="text-sky-500" />}
           </Link>
-
           <Link to="/services" className="text-[#E7EBEE] hover:text-sky-500 transition duration-300 flex items-center gap-1">
             Services {isActive('/services') && <FaCheck className="text-sky-500" />}
           </Link>
-
           <Link to="/career" className="text-[#E7EBEE] hover:text-sky-500 transition duration-300 flex items-center gap-1">
             Career {isActive('/career') && <FaCheck className="text-sky-500" />}
           </Link>
@@ -126,6 +129,7 @@ const Navbar = () => {
             )}
           </div>
         </div>
+
         <Link
           to="/contact"
           className="hidden md:block border border-sky-500 text-white px-6 py-2 rounded-full hover:bg-sky-500 hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl text-lg font-semibold transform hover:scale-105"
@@ -133,23 +137,21 @@ const Navbar = () => {
           Contact Us
         </Link>
       </div>
+
       {isMobileMenuOpen && (
         <div className="md:hidden bg-[#111518]/90 backdrop-blur-md w-full px-6 pb-6">
           <Link to="/" className="block py-3 text-[#E7EBEE] hover:text-sky-500 transition duration-300 flex items-center gap-2" onClick={toggleMobileMenu}>
             {isActive('/') && <FaCheck className="text-sky-500" />}
             Home
           </Link>
-
           <Link to="/about" className="block py-3 text-[#E7EBEE] hover:text-sky-500 transition duration-300 flex items-center gap-2" onClick={toggleMobileMenu}>
             {isActive('/about') && <FaCheck className="text-sky-500" />}
             About Us
           </Link>
-
           <Link to="/services" className="block py-3 text-[#E7EBEE] hover:text-sky-500 transition duration-300 flex items-center gap-2" onClick={toggleMobileMenu}>
             {isActive('/services') && <FaCheck className="text-sky-500" />}
             Services
           </Link>
-
           <Link to="/career" className="block py-3 text-[#E7EBEE] hover:text-sky-500 transition duration-300 flex items-center gap-2" onClick={toggleMobileMenu}>
             {isActive('/career') && <FaCheck className="text-sky-500" />}
             Career
